@@ -14,6 +14,7 @@ class Graph{
     vector<segment_connector> ISC;
     Graph();
     Graph(vector<vector<float>> input);
+    void print_graph();
     private:
     float dist(float x1,float y1,float x2,float y2);
     segment_connector find_segment_connector(int s1, int s2);
