@@ -3,6 +3,10 @@
 
 using namespace std;
 
+bool compare_segment_connector(segment_connector s1, segment_connector s2){
+    return s1.d<s2.d;
+}
+
 Graph::Graph(){}
 
 Graph::Graph(vector<vector<float>> input){
@@ -18,6 +22,7 @@ Graph::Graph(vector<vector<float>> input){
         adj_matrix[2*i + 1][2*i] = 1;
     }
     find_segment_connectors();
+    sort(ISC.begin(),ISC.end(),compare_segment_connector);
 }
 
 float Graph::dist(float x1,float y1,float x2,float y2){
