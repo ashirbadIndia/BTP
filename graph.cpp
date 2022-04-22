@@ -73,7 +73,7 @@ void Graph::find_segment_connectors(){
 void Graph::print_graph(){
     int n = segments.size();
     for(int i=0;i<vertices.size();i++){
-        cout<<"("<<vertices[i].x<<", "<<vertices[i].y<<") "<<endl;
+        cout<<i<<"\t"<<"("<<vertices[i].x<<", "<<vertices[i].y<<") "<<endl;
     }
     cout<<endl<<endl;
     for(int i=0;i<n;i++){
