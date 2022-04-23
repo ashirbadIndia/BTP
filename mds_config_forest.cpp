@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 #include "graph.h"
 #include "containers.h"
+#include "mds_config_tree.h"
 
 using namespace std;
 
@@ -43,6 +44,8 @@ Graph createSubGraph(Graph &P,vector<vector<int>> &new_forest,vector<int> &nodes
     return subG;
 }
 
+// processess the entire graph for various iterations
+// in each iteration, split the main forest graph int small tree sub graphs
 void Find_MDS_CONFIG_FOREST(Graph &G){
     int m = G.segments.size();
     int n = G.adj_matrix.size();
@@ -71,6 +74,7 @@ void Find_MDS_CONFIG_FOREST(Graph &G){
                 cout<<endl;
                 Graph subG = createSubGraph(G,new_forest,nodes);
                 subG.print_graph();
+                Find_MDS_CONFIG_TREE(subG);
                 cout<<"-------"<<endl<<"-------"<<endl;
             }
             //cout<<endl;

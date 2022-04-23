@@ -1,5 +1,5 @@
-#ifndef MDS_CONFIG_H
-#define MDS_CONFIG_H
+#ifndef MDS_CONFIG_FOREST_H
+#define MDS_CONFIG_FOREST_H
 
 #include "graph.h"
 
