@@ -1,3 +1,5 @@
+
+Vertices
 0	(-17, -12) 
 1	(-12, -14) 
 2	(-9, -11) 
@@ -10,6 +12,8 @@
 9	(-13, 1) 
 
 
+
+Segments
 0 0 1	(-17, -12) 	(-12, -14) 
 1 2 3	(-9, -11) 	(-3, -9) 
 2 4 5	(-15, -10) 	(-11, -4) 
@@ -17,6 +21,8 @@
 4 8 9	(-15, -4) 	(-13, 1) 
 
 
+
+Adj Matrix
 0 1 0 0 0 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 
 0 0 0 1 0 0 0 0 0 0 
@@ -28,6 +34,8 @@
 0 0 0 0 0 0 0 0 0 1 
 0 0 0 0 0 0 0 0 1 0 
 
+
+ISC
 3 2 7 5 1.76777
 2 0 4 0 2.82843
 3 1 6 3 3.16228
@@ -38,6 +46,10 @@
 4 0 8 0 8.24621
 4 1 8 2 9.21954
 3 0 6 1 11.3137
+
+Include ISC to the forest
+
+Print new forest config
 0 1 0 0 0 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 
 0 0 0 1 0 0 0 0 0 0 
@@ -49,88 +61,216 @@
 0 0 0 0 0 0 0 0 0 1 
 0 0 0 0 0 0 0 0 1 0 
 
+
+Nodes in the tree
 0 1 
+
+Creating subgraph for the tree
+
+Print details of the subgraph
+
+Vertices
 0	(-17, -12) 
 1	(-12, -14) 
 
 
+
+Segments
 0 0 1	(-17, -12) 	(-12, -14) 
 
 
+
+Adj Matrix
 0 1 
 1 0 
 
+
+ISC
 ^
+
+Vertices degree
 1 1 
+Odd Vertices
+
 0 1 
+Optimal matching cost: 5.38516
+0 1
+
+Euler Graph config
+(0,0)	(1,3)	
+(1,3)	(0,0)	
 -------
 -------
+
+Nodes in the tree
 2 3 
+
+Creating subgraph for the tree
+
+Print details of the subgraph
+
+Vertices
 0	(-9, -11) 
 1	(-3, -9) 
 
 
+
+Segments
 0 0 1	(-9, -11) 	(-3, -9) 
 
 
+
+Adj Matrix
 0 1 
 1 0 
 
+
+ISC
 ^
+
+Vertices degree
 1 1 
+Odd Vertices
+
 0 1 
+Optimal matching cost: 6.32456
+0 1
+
+Euler Graph config
+(0,0)	(1,3)	
+(1,3)	(0,0)	
 -------
 -------
+
+Nodes in the tree
 4 5 
+
+Creating subgraph for the tree
+
+Print details of the subgraph
+
+Vertices
 0	(-15, -10) 
 1	(-11, -4) 
 
 
+
+Segments
 0 0 1	(-15, -10) 	(-11, -4) 
 
 
+
+Adj Matrix
 0 1 
 1 0 
 
+
+ISC
 ^
+
+Vertices degree
 1 1 
+Odd Vertices
+
 0 1 
+Optimal matching cost: 7.2111
+0 1
+
+Euler Graph config
+(0,0)	(1,3)	
+(1,3)	(0,0)	
 -------
 -------
+
+Nodes in the tree
 6 7 
+
+Creating subgraph for the tree
+
+Print details of the subgraph
+
+Vertices
 0	(-4, -6) 
 1	(-9.75, -2.75) 
 
 
+
+Segments
 0 0 1	(-4, -6) 	(-9.75, -2.75) 
 
 
+
+Adj Matrix
 0 1 
 1 0 
 
+
+ISC
 ^
+
+Vertices degree
 1 1 
+Odd Vertices
+
 0 1 
+Optimal matching cost: 6.60492
+0 1
+
+Euler Graph config
+(0,0)	(1,3)	
+(1,3)	(0,0)	
 -------
 -------
+
+Nodes in the tree
 8 9 
+
+Creating subgraph for the tree
+
+Print details of the subgraph
+
+Vertices
 0	(-15, -4) 
 1	(-13, 1) 
 
 
+
+Segments
 0 0 1	(-15, -4) 	(-13, 1) 
 
 
+
+Adj Matrix
 0 1 
 1 0 
 
+
+ISC
 ^
+
+Vertices degree
 1 1 
+Odd Vertices
+
 0 1 
+Optimal matching cost: 5.38516
+0 1
+
+Euler Graph config
+(0,0)	(1,3)	
+(1,3)	(0,0)	
 -------
 -------
+
+New Iteration
 *************************************/n
 *************************************/n
+
+
+
+Include ISC to the forest
+
+Print new forest config
 0 1 0 0 0 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 
 0 0 0 1 0 0 0 0 0 0 
@@ -142,77 +282,183 @@
 0 0 0 0 0 0 0 0 0 1 
 0 0 0 0 0 0 0 0 1 0 
 
+
+Nodes in the tree
 0 1 
+
+Creating subgraph for the tree
+
+Print details of the subgraph
+
+Vertices
 0	(-17, -12) 
 1	(-12, -14) 
 
 
+
+Segments
 0 0 1	(-17, -12) 	(-12, -14) 
 
 
+
+Adj Matrix
 0 1 
 1 0 
 
+
+ISC
 ^
+
+Vertices degree
 1 1 
+Odd Vertices
+
 0 1 
+Optimal matching cost: 5.38516
+0 1
+
+Euler Graph config
+(0,0)	(1,3)	
+(1,3)	(0,0)	
 -------
 -------
+
+Nodes in the tree
 2 3 
+
+Creating subgraph for the tree
+
+Print details of the subgraph
+
+Vertices
 0	(-9, -11) 
 1	(-3, -9) 
 
 
+
+Segments
 0 0 1	(-9, -11) 	(-3, -9) 
 
 
+
+Adj Matrix
 0 1 
 1 0 
 
+
+ISC
 ^
+
+Vertices degree
 1 1 
+Odd Vertices
+
 0 1 
+Optimal matching cost: 6.32456
+0 1
+
+Euler Graph config
+(0,0)	(1,3)	
+(1,3)	(0,0)	
 -------
 -------
+
+Nodes in the tree
 4 5 7 6 
+
+Creating subgraph for the tree
+
+Print details of the subgraph
+
+Vertices
 0	(-15, -10) 
 1	(-11, -4) 
 2	(-9.75, -2.75) 
 3	(-4, -6) 
 
 
+
+Segments
 0 0 1	(-15, -10) 	(-11, -4) 
 1 2 3	(-9.75, -2.75) 	(-4, -6) 
 
 
+
+Adj Matrix
 0 1 0 0 
 1 0 2 0 
 0 2 0 1 
 0 0 1 0 
 
+
+ISC
 ^
+
+Vertices degree
 1 2 2 1 
+Odd Vertices
+
 0 3 
+Optimal matching cost: 11.7047
+0 3
+
+Euler Graph config
+(0,0)	(1,0)	(0,0)	(0,3)	
+(1,0)	(0,0)	(2,0)	(0,0)	
+(0,0)	(2,0)	(0,0)	(1,0)	
+(0,3)	(0,0)	(1,0)	(0,0)	
 -------
 -------
+
+Nodes in the tree
 8 9 
+
+Creating subgraph for the tree
+
+Print details of the subgraph
+
+Vertices
 0	(-15, -4) 
 1	(-13, 1) 
 
 
+
+Segments
 0 0 1	(-15, -4) 	(-13, 1) 
 
 
+
+Adj Matrix
 0 1 
 1 0 
 
+
+ISC
 ^
+
+Vertices degree
 1 1 
+Odd Vertices
+
 0 1 
+Optimal matching cost: 5.38516
+0 1
+
+Euler Graph config
+(0,0)	(1,3)	
+(1,3)	(0,0)	
 -------
 -------
+
+New Iteration
 *************************************/n
 *************************************/n
+
+
+
+Include ISC to the forest
+
+Print new forest config
 0 1 0 0 2 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 
 0 0 0 1 0 0 0 0 0 0 
@@ -224,7 +470,15 @@
 0 0 0 0 0 0 0 0 0 1 
 0 0 0 0 0 0 0 0 1 0 
 
+
+Nodes in the tree
 0 1 4 5 7 6 
+
+Creating subgraph for the tree
+
+Print details of the subgraph
+
+Vertices
 0	(-17, -12) 
 1	(-12, -14) 
 2	(-15, -10) 
@@ -233,11 +487,15 @@
 5	(-4, -6) 
 
 
+
+Segments
 0 0 1	(-17, -12) 	(-12, -14) 
 1 2 3	(-15, -10) 	(-11, -4) 
 2 4 5	(-9.75, -2.75) 	(-4, -6) 
 
 
+
+Adj Matrix
 0 1 2 0 0 0 
 1 0 0 0 0 0 
 2 0 0 1 0 0 
@@ -245,45 +503,117 @@
 0 0 0 2 0 1 
 0 0 0 0 1 0 
 
+
+ISC
 ^
+
+Vertices degree
 2 1 2 2 2 1 
+Odd Vertices
+
 1 5 
+Optimal matching cost: 11.3137
+1 5
+
+Euler Graph config
+(0,0)	(1,0)	(2,0)	(0,0)	(0,0)	(0,0)	
+(1,0)	(0,0)	(0,0)	(0,0)	(0,0)	(0,3)	
+(2,0)	(0,0)	(0,0)	(1,0)	(0,0)	(0,0)	
+(0,0)	(0,0)	(1,0)	(0,0)	(2,0)	(0,0)	
+(0,0)	(0,0)	(0,0)	(2,0)	(0,0)	(1,0)	
+(0,0)	(0,3)	(0,0)	(0,0)	(1,0)	(0,0)	
 -------
 -------
+
+Nodes in the tree
 2 3 
+
+Creating subgraph for the tree
+
+Print details of the subgraph
+
+Vertices
 0	(-9, -11) 
 1	(-3, -9) 
 
 
+
+Segments
 0 0 1	(-9, -11) 	(-3, -9) 
 
 
+
+Adj Matrix
 0 1 
 1 0 
 
+
+ISC
 ^
+
+Vertices degree
 1 1 
+Odd Vertices
+
 0 1 
+Optimal matching cost: 6.32456
+0 1
+
+Euler Graph config
+(0,0)	(1,3)	
+(1,3)	(0,0)	
 -------
 -------
+
+Nodes in the tree
 8 9 
+
+Creating subgraph for the tree
+
+Print details of the subgraph
+
+Vertices
 0	(-15, -4) 
 1	(-13, 1) 
 
 
+
+Segments
 0 0 1	(-15, -4) 	(-13, 1) 
 
 
+
+Adj Matrix
 0 1 
 1 0 
 
+
+ISC
 ^
+
+Vertices degree
 1 1 
+Odd Vertices
+
 0 1 
+Optimal matching cost: 5.38516
+0 1
+
+Euler Graph config
+(0,0)	(1,3)	
+(1,3)	(0,0)	
 -------
 -------
+
+New Iteration
 *************************************/n
 *************************************/n
+
+
+
+Include ISC to the forest
+
+Print new forest config
 0 1 0 0 2 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 
 0 0 0 1 0 0 0 0 0 0 
@@ -295,7 +625,15 @@
 0 0 0 0 0 0 0 0 0 1 
 0 0 0 0 0 0 0 0 1 0 
 
+
+Nodes in the tree
 0 1 4 5 7 6 3 2 
+
+Creating subgraph for the tree
+
+Print details of the subgraph
+
+Vertices
 0	(-17, -12) 
 1	(-12, -14) 
 2	(-15, -10) 
@@ -306,12 +644,16 @@
 7	(-9, -11) 
 
 
+
+Segments
 0 0 1	(-17, -12) 	(-12, -14) 
 1 2 3	(-15, -10) 	(-11, -4) 
 2 4 5	(-9.75, -2.75) 	(-4, -6) 
 3 6 7	(-3, -9) 	(-9, -11) 
 
 
+
+Adj Matrix
 0 1 2 0 0 0 0 0 
 1 0 0 0 0 0 0 0 
 2 0 0 1 0 0 0 0 
@@ -321,29 +663,79 @@
 0 0 0 0 0 2 0 1 
 0 0 0 0 0 0 1 0 
 
+
+ISC
 ^
+
+Vertices degree
 2 1 2 2 2 2 2 1 
+Odd Vertices
+
 1 7 
+Optimal matching cost: 4.24264
+1 7
+
+Euler Graph config
+(0,0)	(1,0)	(2,0)	(0,0)	(0,0)	(0,0)	(0,0)	(0,0)	
+(1,0)	(0,0)	(0,0)	(0,0)	(0,0)	(0,0)	(0,0)	(0,3)	
+(2,0)	(0,0)	(0,0)	(1,0)	(0,0)	(0,0)	(0,0)	(0,0)	
+(0,0)	(0,0)	(1,0)	(0,0)	(2,0)	(0,0)	(0,0)	(0,0)	
+(0,0)	(0,0)	(0,0)	(2,0)	(0,0)	(1,0)	(0,0)	(0,0)	
+(0,0)	(0,0)	(0,0)	(0,0)	(1,0)	(0,0)	(2,0)	(0,0)	
+(0,0)	(0,0)	(0,0)	(0,0)	(0,0)	(2,0)	(0,0)	(1,0)	
+(0,0)	(0,3)	(0,0)	(0,0)	(0,0)	(0,0)	(1,0)	(0,0)	
 -------
 -------
+
+Nodes in the tree
 8 9 
+
+Creating subgraph for the tree
+
+Print details of the subgraph
+
+Vertices
 0	(-15, -4) 
 1	(-13, 1) 
 
 
+
+Segments
 0 0 1	(-15, -4) 	(-13, 1) 
 
 
+
+Adj Matrix
 0 1 
 1 0 
 
+
+ISC
 ^
+
+Vertices degree
 1 1 
+Odd Vertices
+
 0 1 
+Optimal matching cost: 5.38516
+0 1
+
+Euler Graph config
+(0,0)	(1,3)	
+(1,3)	(0,0)	
 -------
 -------
+
+New Iteration
 *************************************/n
 *************************************/n
+
+
+
+Include ISC to the forest
+
+Print new forest config
 0 1 0 0 2 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 
 0 0 0 1 0 0 0 0 0 0 
@@ -355,7 +747,15 @@
 0 0 0 0 0 2 0 0 0 1 
 0 0 0 0 0 0 0 0 1 0 
 
+
+Nodes in the tree
 0 1 4 5 7 6 3 2 8 9 
+
+Creating subgraph for the tree
+
+Print details of the subgraph
+
+Vertices
 0	(-17, -12) 
 1	(-12, -14) 
 2	(-15, -10) 
@@ -368,6 +768,8 @@
 9	(-13, 1) 
 
 
+
+Segments
 0 0 1	(-17, -12) 	(-12, -14) 
 1 2 3	(-15, -10) 	(-11, -4) 
 2 4 5	(-9.75, -2.75) 	(-4, -6) 
@@ -375,6 +777,8 @@
 4 8 9	(-15, -4) 	(-13, 1) 
 
 
+
+Adj Matrix
 0 1 2 0 0 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 
 2 0 0 1 0 0 0 0 0 0 
@@ -386,10 +790,35 @@
 0 0 0 2 0 0 0 0 0 1 
 0 0 0 0 0 0 0 0 1 0 
 
+
+ISC
 ^
+
+Vertices degree
 2 1 2 3 2 2 2 1 2 1 
+Odd Vertices
+
 1 3 7 9 
+Optimal matching cost: 9.62781
+1 7
+3 9
+
+Euler Graph config
+(0,0)	(1,0)	(2,0)	(0,0)	(0,0)	(0,0)	(0,0)	(0,0)	(0,0)	(0,0)	
+(1,0)	(0,0)	(0,0)	(0,0)	(0,0)	(0,0)	(0,0)	(0,3)	(0,0)	(0,0)	
+(2,0)	(0,0)	(0,0)	(1,0)	(0,0)	(0,0)	(0,0)	(0,0)	(0,0)	(0,0)	
+(0,0)	(0,0)	(1,0)	(0,0)	(2,0)	(0,0)	(0,0)	(0,0)	(2,0)	(0,3)	
+(0,0)	(0,0)	(0,0)	(2,0)	(0,0)	(1,0)	(0,0)	(0,0)	(0,0)	(0,0)	
+(0,0)	(0,0)	(0,0)	(0,0)	(1,0)	(0,0)	(2,0)	(0,0)	(0,0)	(0,0)	
+(0,0)	(0,0)	(0,0)	(0,0)	(0,0)	(2,0)	(0,0)	(1,0)	(0,0)	(0,0)	
+(0,0)	(0,3)	(0,0)	(0,0)	(0,0)	(0,0)	(1,0)	(0,0)	(0,0)	(0,0)	
+(0,0)	(0,0)	(0,0)	(2,0)	(0,0)	(0,0)	(0,0)	(0,0)	(0,0)	(1,0)	
+(0,0)	(0,0)	(0,0)	(0,3)	(0,0)	(0,0)	(0,0)	(0,0)	(1,0)	(0,0)	
 -------
 -------
+
+New Iteration
 *************************************/n
 *************************************/n
+
+

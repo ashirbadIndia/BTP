@@ -72,14 +72,17 @@ void Graph::find_segment_connectors(){
 
 void Graph::print_graph(){
     int n = segments.size();
+    cout<<endl<<"Vertices"<<endl;
     for(int i=0;i<vertices.size();i++){
         cout<<i<<"\t"<<"("<<vertices[i].x<<", "<<vertices[i].y<<") "<<endl;
     }
     cout<<endl<<endl;
+    cout<<endl<<"Segments"<<endl;
     for(int i=0;i<n;i++){
         cout<<i<<" "<<segments[i].p1<<" "<<segments[i].p2<<"\t"<<"("<<vertices[segments[i].p1].x<<", "<<vertices[segments[i].p1].y<<") "<<"\t("<<vertices[segments[i].p2].x<<", "<<vertices[segments[i].p2].y<<") "<<endl;
     }
     cout<<endl<<endl;
+    cout<<endl<<"Adj Matrix"<<endl;
     for(int i=0;i<adj_matrix.size();i++){
         for(int j=0;j<adj_matrix[i].size();j++){
             cout<<adj_matrix[i][j]<<" ";
@@ -87,6 +90,7 @@ void Graph::print_graph(){
         cout<<endl;
     }
     cout<<endl;
+    cout<<endl<<"ISC"<<endl;
     for(int i=0;i<ISC.size();i++){
         cout<<ISC[i].s1<<" "<<ISC[i].s2<<" "<<ISC[i].p1<<" "<<ISC[i].p2<<" "<<ISC[i].d<<endl;
     }

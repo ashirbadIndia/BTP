@@ -55,6 +55,8 @@ void Find_MDS_CONFIG_FOREST(Graph &G){
             new_forest[G.ISC[i].p2][G.ISC[i].p1] = 2;
             new_forest[G.ISC[i].p1][G.ISC[i].p2] = 2;
         }
+        cout<<endl<<"Include ISC to the forest"<<endl;
+        cout<<endl<<"Print new forest config"<<endl;
         for(int i=0;i<new_forest.size();i++){
             for(int j=0;j<new_forest[i].size();j++){
                 cout<<new_forest[i][j]<<" ";
@@ -68,17 +70,22 @@ void Find_MDS_CONFIG_FOREST(Graph &G){
             if(!vis[i]){
                 vector<int> nodes;
                 DFS(new_forest,vis,nodes,i);
+                cout<<endl<<"Nodes in the tree"<<endl;
                 for(int j=0;j<nodes.size();j++){
                     cout<<nodes[j]<<" ";
                 }
                 cout<<endl;
+                cout<<endl<<"Creating subgraph for the tree"<<endl;
                 Graph subG = createSubGraph(G,new_forest,nodes);
+                cout<<endl<<"Print details of the subgraph"<<endl;
                 subG.print_graph();
                 Find_MDS_CONFIG_TREE(subG);
                 cout<<"-------"<<endl<<"-------"<<endl;
             }
             //cout<<endl;
         }
+        cout<<endl<<"New Iteration"<<endl;
         cout<<"*************************************/n"<<endl<<"*************************************/n"<<endl;
+        cout<<endl<<endl;
     }
 }
