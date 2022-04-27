@@ -28,4 +28,12 @@ class segment_connector{
     segment_connector(int S1,int S2,int P1,int P2, float D);
 };
 
+class edge{
+    public:
+    int s, e;
+    int type;
+    float dist;
+    edge(){}
+};
+
 #endif

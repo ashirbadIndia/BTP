@@ -2,6 +2,7 @@
 #include "graph.h"
 #include "containers.h"
 #include "mcpm.h"
+#include "find_euler_path.h"
 
 using namespace std;
 
@@ -42,4 +43,5 @@ void Find_MDS_CONFIG_TREE(Graph &G){
         }
         cout<<endl;
     }
+    find_optimal_path(G,new_edges);
 }
