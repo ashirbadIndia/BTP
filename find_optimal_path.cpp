@@ -18,6 +18,8 @@ void add_to_edge_seq(Graph &G,stack<edge> &S,edge E){
             edge tmp;
             tmp.s = top.s;
             tmp.e = E.e;
+            tmp.S = G.vertices[tmp.s];
+            tmp.E = G.vertices[tmp.e];
             tmp.type = 4;
             tmp.dist= G.dist(G.vertices[tmp.s].x,G.vertices[tmp.s].y,G.vertices[tmp.e].x,G.vertices[tmp.e].y);
             S.push(tmp);
@@ -33,6 +35,8 @@ vector<edge> euler_path_edge_seq(Graph &G,vector<vector<int>> alt_edges,vector<i
         edge E;
         E.s = euler_path[i];
         E.e = euler_path[i+1];
+        E.S = G.vertices[E.s];
+        E.E = G.vertices[E.e];
         if(def_edges[E.s][E.e]>0){
 
             E.type=def_edges[E.s][E.e];

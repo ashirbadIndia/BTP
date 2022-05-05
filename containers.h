@@ -33,6 +33,7 @@ class segment_connector{
 class edge{
     public:
     int s, e;
+    vertex S, E;
     int type;
     float dist;
     edge(){}

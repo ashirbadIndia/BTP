@@ -40,7 +40,7 @@ mds_config_of_tree::mds_config_of_tree(vector<edge> &seq, int v){
     for(int i=0;i<seq.size();i++){
         dist += seq[i].dist;
     }
-    mds_req = dist/v;
+    mds_req = dist/v + ((fmod(dist,v))>0?1:0);
 }
 
 mds_config_of_forest::mds_config_of_forest(){
