@@ -69,7 +69,7 @@ vector<edge> euler_path_edge_seq(Graph &G,vector<vector<int>> alt_edges,vector<i
         }
         
     }
-    cout<<mx_e<<endl;
+    //cout<<mx_e<<endl;
     vector<edge> path_edge_seq(edge_seq.size()-1);
 
     if(mx_e!=-1){
@@ -106,16 +106,17 @@ void find_euler_path(vector<vector<int>> &def_edges,vector<vector<int>> &alt_edg
     euler_path.push_back(V);
 }
 
-void find_optimal_path(Graph &G,vector<vector<int>> &new_added_edges){
+vector<edge> find_optimal_path(Graph &G,vector<vector<int>> &new_added_edges){
     vector<vector<int>> def_edges = G.adj_matrix;
     vector<vector<int>> alt_edges = new_added_edges;
     vector<int> euler_path; 
     find_euler_path(def_edges,alt_edges,euler_path,0);
 
-    vector<edge> ep_edge_seq = euler_path_edge_seq(G,new_added_edges,euler_path);
+    vector<edge> opt_edge_seq = euler_path_edge_seq(G,new_added_edges,euler_path);
 
-    for(int i=0;i<ep_edge_seq.size();i++){
-        cout<<ep_edge_seq[i].s<<" "<<ep_edge_seq[i].e<<" "<<ep_edge_seq[i].type<<" "<<ep_edge_seq[i].dist<<endl;
+    for(int i=0;i<opt_edge_seq.size();i++){
+        cout<<opt_edge_seq[i].s<<" "<<opt_edge_seq[i].e<<" "<<opt_edge_seq[i].type<<" "<<opt_edge_seq[i].dist<<endl;
     }
     cout<<endl;
+    return opt_edge_seq;
 }

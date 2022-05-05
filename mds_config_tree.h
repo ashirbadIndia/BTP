@@ -2,7 +2,8 @@
 #define MDS_CONFIG_TREE_H
 
 #include "graph.h"
+#include "containers.h"
 
-void Find_MDS_CONFIG_TREE(Graph &G);
+mds_config_of_tree Find_MDS_CONFIG_TREE(Graph &G, int v);
 
 #endif

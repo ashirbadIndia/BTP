@@ -3,6 +3,8 @@
 
 #include<bits/stdc++.h>
 
+using namespace std;
+
 class vertex{
     public:
     float x,y;
@@ -34,6 +36,24 @@ class edge{
     int type;
     float dist;
     edge(){}
+};
+
+class mds_config_of_tree{
+    public:
+    vector<edge> edge_seq;
+    float dist;
+    int mds_req;
+    mds_config_of_tree();
+    mds_config_of_tree(vector<edge> &seq,int v);
+};
+
+class mds_config_of_forest{
+    public:
+    vector<mds_config_of_tree> trees;
+    float dist;
+    int mds_req;
+    mds_config_of_forest();
+    void add_(mds_config_of_tree i);
 };
 
 #endif

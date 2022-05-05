@@ -12,8 +12,22 @@ int main(){
                                  {-4,-6,-9.75,-2.75},
                                  {-15,-4,-13,1}
                                 };
+
+    int V = 4;
+
     Graph G(input);
     G.print_graph();
-    Find_MDS_CONFIG_FOREST(G);
+    vector<mds_config_of_forest> ans = Find_MDS_CONFIG_FOREST(G,V);
+
+    int n = ans.size();
+    for(int i=0;i<n;i++){
+        cout<<"ITERATION "<<i+1<<endl;
+        cout<<"DIST "<<ans[i].dist<<endl;
+        cout<<"MDS REQUIRED "<<ans[i].mds_req<<endl<<endl;
+        /*for(int j=0;j<ans[i].trees.size();j++){
+            cout<<"TREE "<<j+1<<endl;
+            cout<<"\t"<<;
+        }*/
+    }
     return 0;
 }

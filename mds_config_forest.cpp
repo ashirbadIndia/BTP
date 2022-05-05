@@ -46,9 +46,10 @@ Graph createSubGraph(Graph &P,vector<vector<int>> &new_forest,vector<int> &nodes
 
 // processess the entire graph for various iterations
 // in each iteration, split the main forest graph int small tree sub graphs
-void Find_MDS_CONFIG_FOREST(Graph &G){
+vector<mds_config_of_forest> Find_MDS_CONFIG_FOREST(Graph &G, int v){
     int m = G.segments.size();
     int n = G.adj_matrix.size();
+    vector<mds_config_of_forest> mds_conf_in_each_iteration;
     for(int k=0;k<m;k++){
         vector<vector<int>> new_forest = G.adj_matrix;
         for(int i=0;i<k;i++){
@@ -66,6 +67,9 @@ void Find_MDS_CONFIG_FOREST(Graph &G){
         cout<<endl;
 
         vector<bool> vis(n,0);
+
+        mds_config_of_forest F;
+
         for(int i=0;i<n;i++){
             if(!vis[i]){
                 vector<int> nodes;
@@ -79,13 +83,20 @@ void Find_MDS_CONFIG_FOREST(Graph &G){
                 Graph subG = createSubGraph(G,new_forest,nodes);
                 cout<<endl<<"Print details of the subgraph"<<endl;
                 subG.print_graph();
-                Find_MDS_CONFIG_TREE(subG);
+                mds_config_of_tree opt_edge_seq = Find_MDS_CONFIG_TREE(subG,v);
+
+                F.add_(opt_edge_seq);
+
                 cout<<"-------"<<endl<<"-------"<<endl;
             }
             //cout<<endl;
         }
+
+        mds_conf_in_each_iteration.push_back(F);
+
         cout<<endl<<"New Iteration"<<endl;
         cout<<"*************************************/n"<<endl<<"*************************************/n"<<endl;
         cout<<endl<<endl;
     }
+    return mds_conf_in_each_iteration;
 }

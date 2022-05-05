@@ -28,3 +28,28 @@ segment_connector::segment_connector(int S1,int S2,int P1,int P2,float D){
     p2 = P2;
     d = D;
 }
+
+mds_config_of_tree::mds_config_of_tree(){
+    mds_req = 0;
+    dist = 0;
+}
+
+mds_config_of_tree::mds_config_of_tree(vector<edge> &seq, int v){
+    edge_seq = seq;
+    dist = 0;
+    for(int i=0;i<seq.size();i++){
+        dist += seq[i].dist;
+    }
+    mds_req = dist/v;
+}
+
+mds_config_of_forest::mds_config_of_forest(){
+    dist = 0;
+    mds_req = 0;
+}
+
+void mds_config_of_forest::add_(mds_config_of_tree i){
+    trees.push_back(i);
+    mds_req += i.mds_req;
+    dist += i.dist;
+}

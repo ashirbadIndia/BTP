@@ -2,11 +2,11 @@
 #include "graph.h"
 #include "containers.h"
 #include "mcpm.h"
-#include "find_euler_path.h"
+#include "find_optimal_path.h"
 
 using namespace std;
 
-void Find_MDS_CONFIG_TREE(Graph &G){
+mds_config_of_tree Find_MDS_CONFIG_TREE(Graph &G, int v){
     int n = G.vertices.size();
     vector<int> degree(n,0);
     for(int i=0;i<n;i++){
@@ -43,5 +43,9 @@ void Find_MDS_CONFIG_TREE(Graph &G){
         }
         cout<<endl;
     }
-    find_optimal_path(G,new_edges);
+    vector<edge> opt_edge_seq = find_optimal_path(G,new_edges);
+
+    mds_config_of_tree curr(opt_edge_seq,v);
+
+    return curr;
 }
