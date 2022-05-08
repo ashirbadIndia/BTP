@@ -2,6 +2,7 @@
 #include "graph.h"
 #include "containers.h"
 #include "mds_config_tree.h"
+#include "debug.h"
 
 using namespace std;
 
@@ -56,15 +57,15 @@ vector<mds_config_of_forest> Find_MDS_CONFIG_FOREST(Graph &G, int v){
             new_forest[G.ISC[i].p2][G.ISC[i].p1] = 2;
             new_forest[G.ISC[i].p1][G.ISC[i].p2] = 2;
         }
-        cout<<endl<<"Include ISC to the forest"<<endl;
-        cout<<endl<<"Print new forest config"<<endl;
-        for(int i=0;i<new_forest.size();i++){
+        if(DEBUG) cout<<endl<<"Include ISC to the forest"<<endl;
+        if(DEBUG) cout<<endl<<"Print new forest config"<<endl;
+        if(DEBUG) for(int i=0;i<new_forest.size();i++){
             for(int j=0;j<new_forest[i].size();j++){
                 cout<<new_forest[i][j]<<" ";
             }
             cout<<endl;
         }
-        cout<<endl;
+        if(DEBUG) cout<<endl;
 
         vector<bool> vis(n,0);
 
@@ -74,29 +75,29 @@ vector<mds_config_of_forest> Find_MDS_CONFIG_FOREST(Graph &G, int v){
             if(!vis[i]){
                 vector<int> nodes;
                 DFS(new_forest,vis,nodes,i);
-                cout<<endl<<"Nodes in the tree"<<endl;
-                for(int j=0;j<nodes.size();j++){
+                if(DEBUG) cout<<endl<<"Nodes in the tree"<<endl;
+                if(DEBUG) for(int j=0;j<nodes.size();j++){
                     cout<<nodes[j]<<" ";
                 }
-                cout<<endl;
-                cout<<endl<<"Creating subgraph for the tree"<<endl;
+                if(DEBUG) cout<<endl;
+                if(DEBUG) cout<<endl<<"Creating subgraph for the tree"<<endl;
                 Graph subG = createSubGraph(G,new_forest,nodes);
-                cout<<endl<<"Print details of the subgraph"<<endl;
-                subG.print_graph();
+                if(DEBUG) cout<<endl<<"Print details of the subgraph"<<endl;
+                if(DEBUG) subG.print_graph();
                 mds_config_of_tree opt_edge_seq = Find_MDS_CONFIG_TREE(subG,v);
 
                 F.add_(opt_edge_seq);
 
-                cout<<"-------"<<endl<<"-------"<<endl;
+                if(DEBUG) cout<<"-------"<<endl<<"-------"<<endl;
             }
             //cout<<endl;
         }
 
         mds_conf_in_each_iteration.push_back(F);
 
-        cout<<endl<<"New Iteration"<<endl;
-        cout<<"*************************************/n"<<endl<<"*************************************/n"<<endl;
-        cout<<endl<<endl;
+        if(DEBUG) cout<<endl<<"New Iteration"<<endl;
+        if(DEBUG) cout<<"*************************************/n"<<endl<<"*************************************/n"<<endl;
+        if(DEBUG) cout<<endl<<endl;
     }
     return mds_conf_in_each_iteration;
 }

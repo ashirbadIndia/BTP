@@ -2,6 +2,7 @@
 #include "mcpm_graph.h"
 #include "graph.h"
 #include "mcpm.h"
+#include "debug.h"
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -65,7 +66,7 @@ vector<vector<int>> MinimumCostPerfectMatchingExecution(int n,vector<vector<floa
 	list<int> match_list = solution.first;
 	double obj = solution.second;
 
-	cout << "Optimal matching cost: " << obj << endl;
+	if(DEBUG) cout << "Optimal matching cost: " << obj << endl;
 	//cout << "Edges in the matching:" << endl;
 
 	vector<vector<int>> matching(n/2,vector<int>(2,0));
@@ -123,7 +124,7 @@ vector<vector<int>> MinimumCostPerfectMatching(Graph &G, vector<int> odd_vertice
 	}
 	vector<vector<int>> matching = MinimumCostPerfectMatchingExecution(n,config,odd_vertices);
 
-	for(int i=0;i<matching.size();i++){
+	if(DEBUG) for(int i=0;i<matching.size();i++){
 		cout<<matching[i][0]<<" "<<matching[i][1]<<endl;
 	}
 	return matching;

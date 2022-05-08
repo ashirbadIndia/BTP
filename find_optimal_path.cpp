@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 #include "graph.h"
 #include "containers.h"
+#include "debug.h"
+
 
 using namespace std;
 
@@ -118,9 +120,9 @@ vector<edge> find_optimal_path(Graph &G,vector<vector<int>> &new_added_edges){
 
     vector<edge> opt_edge_seq = euler_path_edge_seq(G,new_added_edges,euler_path);
 
-    for(int i=0;i<opt_edge_seq.size();i++){
+    if(DEBUG) for(int i=0;i<opt_edge_seq.size();i++){
         cout<<opt_edge_seq[i].s<<" "<<opt_edge_seq[i].e<<" "<<opt_edge_seq[i].type<<" "<<opt_edge_seq[i].dist<<endl;
     }
-    cout<<endl;
+    if(DEBUG) cout<<endl;
     return opt_edge_seq;
 }

@@ -2,6 +2,7 @@
 #include "graph.h"
 #include "containers.h"
 #include "mds_config_forest.h"
+#include "debug.h"
 
 using namespace std;
 
@@ -36,7 +37,7 @@ int main(){
     pair<int, vector<vector<float>>> input = readInput();
 
     Graph G(input.second);
-    G.print_graph();
+    if(DEBUG) G.print_graph();
     vector<mds_config_of_forest> ans = Find_MDS_CONFIG_FOREST(G,input.first);
 
     int n = ans.size();
